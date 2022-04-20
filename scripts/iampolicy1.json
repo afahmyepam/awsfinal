@@ -1,0 +1,25 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Action": [
+        "ec2:Describe*",
+        "ecr:GetAuthorizationToken",
+        "ecr:BatchCheckLayerAvailability",
+        "ecr:GetDownloadUrlForLayer",
+        "ecr:BatchGetImage",
+        "logs:CreateLogStream",
+        "logs:PutLogEvents",
+        "ssm:GetParameter*",
+        "secretsmanager:GetSecretValue",
+        "kms:Decrypt",
+        "elasticfilesystem:DescribeFileSystems",
+        "elasticfilesystem:ClientMount",
+        "rds:DescribeDBInstances",
+        "elasticfilesystem:ClientWrite"
+      ],
+      "Effect": "Allow",
+      "Resource": ["*"]
+    }
+  ]
+}
